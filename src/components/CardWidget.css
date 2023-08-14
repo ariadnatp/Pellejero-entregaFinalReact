@@ -1,0 +1,25 @@
+.flexContador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+/* .numero-circulo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #00bfff;
+  position: absolute; 
+  bottom: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.btnCarrito {
+  font-family: 'Jura', sans-serif;
+}
