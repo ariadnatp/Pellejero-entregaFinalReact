@@ -2,9 +2,9 @@ import React from 'react';
 export const ItemDetail = ({selectProd})=>{
   console.log(selectProd);
     return (
-    <div className="container">
+    <div className="container d-flex justify-content-center align-items-center">
     <div className="row">
-    <div className="col-md-6 mb-3">
+    <div>
     <div className="card border-light">
       <img className="card-img-top rounded mx-auto d-block" src={selectProd.foto} alt={selectProd.nombre} style={{ width: 300 }} />
       <div className="card-body">
