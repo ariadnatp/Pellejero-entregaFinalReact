@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import {collection, getDocs} from "firebase/firestore";
+import {firestore} from "../firebase/client.js";
 
 export const Producto = () => {
   const [productos, setProductos] = useState([]);
   useEffect(() => {
-    fetch('/productos.json')
-      .then((response) => response.json())
-      .then((data) => setProductos(data))
-      .catch((error) => console.error('Error fetching productos:', error));
+    const productosRef = collection(firestore, "productos");
+    getDocs(productosRef)
+    .then((resp)=> {
+      setProductos(
+        resp.docs.map((doc)=> {
+          return {...doc.data(), id: doc.id}
+        })
+      )
+    })
   }, []);
 
   return (
@@ -29,5 +36,4 @@ export const Producto = () => {
     </div>
   );
 };
-
 export default Producto;

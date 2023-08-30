@@ -1,6 +1,12 @@
 import React from 'react';
+import  CartToggle  from './CartToggle.jsx';
+import { useContext } from "react";
+import { CartContext } from '../context/CartContext';
+
+
 export const ItemDetail = ({selectProd})=>{
-  console.log(selectProd);
+  const Cartcontext = useContext(CartContext);
+    console.log(selectProd);   
     return (
     <div className="container d-flex justify-content-center align-items-center">
     <div className="row">
@@ -13,10 +19,12 @@ export const ItemDetail = ({selectProd})=>{
         <p className="card-text">$ {selectProd.precio}</p>
         <p className="card-text">Color: {selectProd.color}</p>
         <p className="card-text">Talle: {selectProd.talle}</p>
+        <CartToggle/>
       </div>
     </div>
     </div>
-</div>
-</div>
+    </div>
+    </div>
+  
 );}
 export default ItemDetail;
