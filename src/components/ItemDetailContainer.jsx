@@ -9,8 +9,7 @@ export const ItemDetailContainer = () => { //no llamo a prods
   const { id } = useParams();
 
   useEffect(() => {
-    const coleccionProd = collection(firestore, "productos")
-    const docRef = doc(coleccionProd, "productos", id);
+    const docRef = doc(firestore, "productos", id);
     getDoc(docRef)
     .then((resp)=> {
       setSelectProd(
