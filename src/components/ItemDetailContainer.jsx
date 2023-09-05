@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {ItemDetail} from './ItemDetail.jsx';
 import { useParams } from 'react-router-dom';
-import {doc, getDoc, collection} from "firebase/firestore";
+import {doc, getDoc} from "firebase/firestore";
 import {firestore} from "../firebase/client.js";
 
 export const ItemDetailContainer = () => { //no llamo a prods

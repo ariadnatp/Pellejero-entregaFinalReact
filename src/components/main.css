@@ -118,3 +118,19 @@
     cursor: pointer;
     outline: inherit;
 }
+/* En main.css */
+
+.btnCarrito {
+  background-color: #1A2EBD;
+  color: white;
+  font-family: 'Jura', sans-serif;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* Agrega cualquier otro estilo que desees */
+}
+
+.btnCarrito:hover {
+  background-color: #0e1b7d; /* Cambia el color al pasar el cursor sobre el botón */
+  /* Agrega cualquier otro estilo de hover que desees */
+}

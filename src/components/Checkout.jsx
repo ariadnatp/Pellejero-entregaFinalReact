@@ -17,7 +17,7 @@ const Checkout = () => {
             productos: carrito,
             total: precioTotal()
         }
-        const pedidosRef = collection(firestore, "predidos");
+        const pedidosRef = collection(firestore, "pedidos");
 
         addDoc(pedidosRef, pedido)
         .then((doc)=> {

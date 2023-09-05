@@ -5,7 +5,7 @@ import {Producto} from "./routes/Catalogo.jsx"
 import { NavBar } from './components/navbar.jsx'
 import {EdicionSpace} from './routes/EdicionSpace.jsx'
 import {EdicionLisos} from './routes/EdicionLisos.jsx'
-import { ItemListContainer } from './components/ItemListConteiner'
+import  ItemListConteiner  from './components/ItemListConteiner'
 import {ItemDetailContainer} from './components/ItemDetailContainer.jsx'
 import Checkout from './components/Checkout.jsx'
 import Carrito from './components/Carrito.jsx'
@@ -32,7 +32,7 @@ function App() {
     <BrowserRouter>
       <NavBar/>
       <Routes>
-        <Route path="/" element={<ItemListContainer/>} />
+        <Route path="/" element={<ItemListConteiner/>} />
         <Route path="/Catalogo" element={<Producto/>} />
         <Route path="/EdicionSpace" element={<EdicionSpace/>} />
         <Route path="/EdicionLisos" element={<EdicionLisos/>} />

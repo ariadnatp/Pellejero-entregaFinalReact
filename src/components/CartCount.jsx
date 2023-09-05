@@ -10,7 +10,6 @@ const CartCount = ( {quantity, decrementQuantity, incrementQuantity, agregarAlCa
             <p className="cantidad">{quantity}</p>
             <button className="btnSumaResta" onClick={incrementQuantity}>+</button>
         </div>
-        <button className="btnCarrito" onClick={agregarAlCarrito}>Agregar al carrito</button>
         {/* <button className="btnCarrito" onClick={agregarAlCarrito}>{enCarrito ? 'Eliminar del carrito' : 'Agregar al carrito'}</button> */}
     </div>
   )
