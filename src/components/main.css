@@ -1,9 +1,9 @@
 .flexContador {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
   }
 .btnCarrito {
   font-family: 'Jura', sans-serif;
@@ -59,78 +59,86 @@
   outline: inherit;
 }
 .fontFamily{
+  text-decoration: none;
   font-family: 'Jura', sans-serif;
   flex-direction: column;
   align-items: center;
   justify-items: center;
 }
 .FlagImg{
-    width: 50px;
+  width: 50px;
 }
 .navFlex{
-    padding-left: 0.5rem;
+  padding-left: 0.5rem;
 }
 .navStyle{
-    padding-left:2rem;
+  padding-left:2rem;
+  font-family: 'Jura', sans-serif;
 }
 .estilo{
-    padding-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
 }
 .formulario input {
-    padding: .5rem;
-    width: 18rem;
-    border-radius: .5rem;
-    border: 2px solid #1A2EBD;
+  padding: .5rem;
+  width: 18rem;
+  border-radius: .5rem;
+  border: 2px solid #1A2EBD;
 }
 .btnFinalizar{
-    font-family: 'Jura', sans-serif;
-    font-size: 20px;
-    color: aliceblue;
-    text-decoration: none;
-    border-radius: 25;
-    margin: 10px;
-    width: 20%;
-    padding: 10px;
-    background: #1A2EBD;
-    border-radius: 8px;
-    flex: none;
-    display: flex;
-    order: 1;
-    align-self: center;
-    flex-grow: 0;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    border: none;
-    border-style: none;
-    cursor: pointer;
-    outline: inherit;
+  font-family: 'Jura', sans-serif;
+  font-size: 20px;
+  color: aliceblue;
+  text-decoration: none;
+  border-radius: 25;
+  margin: 10px;
+  width: 20%;
+  padding: 10px;
+  background: #1A2EBD;
+  border-radius: 8px;
+  flex: none;
+  display: flex;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: none;
+  border-style: none;
+  cursor: pointer;
+  outline: inherit;
 }
-/* En main.css */
-
 .btnCarrito {
   background-color: #1A2EBD;
   color: white;
   font-family: 'Jura', sans-serif;
+  text-decoration: none;  
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
-  /* Agrega cualquier otro estilo que desees */
 }
-
 .btnCarrito:hover {
-  background-color: #0e1b7d; /* Cambia el color al pasar el cursor sobre el botón */
-  /* Agrega cualquier otro estilo de hover que desees */
+  background-color: #0e1b7d;
+}
+.imgCarrito {
+  display: block;
+  margin: 0 auto;
+  width: 10%; 
+}
+.btnVer{
+  text-decoration: none;
+  font-family: 'Jura', sans-serif;
+  color: white;
 }

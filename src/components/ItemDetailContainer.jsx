@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import {ItemDetail} from './ItemDetail.jsx';
 import { useParams } from 'react-router-dom';
-import {doc, getDoc} from "firebase/firestore";
-import {firestore} from "../firebase/client.js";
+import { doc, getDoc } from "firebase/firestore";
+import { firestore } from "../firebase/client.js";
 
-export const ItemDetailContainer = () => { //no llamo a prods
-  const [selectProd, setSelectProd] = useState({}); //estado con el que guardaremos la información del producto
+export const ItemDetailContainer = () => { 
+  const [selectProd, setSelectProd] = useState({});
   const { id } = useParams();
 
   useEffect(() => {
@@ -19,9 +19,7 @@ export const ItemDetailContainer = () => { //no llamo a prods
     .catch((error)=> console.log(error))
   }, [id]);
 
-  return ( 
-  <ItemDetail selectProd={selectProd}/>);
+  return (<ItemDetail selectProd={selectProd}/>);
   }
-
 
 export default ItemDetailContainer;
