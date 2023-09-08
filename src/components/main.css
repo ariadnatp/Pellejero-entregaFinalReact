@@ -142,3 +142,34 @@
   font-family: 'Jura', sans-serif;
   color: white;
 }
+.cargando{
+  font-family: 'Jura', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.btnVaciar{
+  font-family: 'Jura', sans-serif;
+  font-size: 15px;
+  color: aliceblue;
+  text-decoration: none;
+  border-radius: 15;
+  margin: 10px;
+  width: 14%;
+  padding: 10px;
+  background: #2938ad6a;
+  border-radius: 8px;
+  flex: none;
+  display: flex;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: none;
+  border-style: none;
+  cursor: pointer;
+  outline: inherit;
+}

@@ -6,7 +6,7 @@ Finalmente el cliente tiene la opcion de vaciar su Carrito o de finalizar su com
 
 Para esta entrega aplique:
 - HTML
-- JSX
+- JSX 
 - REACT
 - BOOTSTRAP
 - FIREBASE
